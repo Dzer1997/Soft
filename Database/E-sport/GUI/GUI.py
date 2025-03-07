@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 from db_connector  import get_db_connection
-from stored_procedures import join_tournament, submit_match_result 
+from stored_procedures import joinTournament, submit_match_result 
 
 
 # Function tournament registration
@@ -15,7 +15,7 @@ def on_join_tournament():
     
     try:
         # Call function from file stored_procedures.py
-        join_tournament(int(tournament_id), int(player_id))
+        joinTournament(int(tournament_id), int(player_id))
         messagebox.showinfo("Success", f"Player {player_id} registered for Tournament {tournament_id}.")
     except Exception as e:
         messagebox.showerror("Error", f"An error occurred: {e}")
