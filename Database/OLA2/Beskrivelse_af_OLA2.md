@@ -1,3 +1,5 @@
+https://cdn.discordapp.com/attachments/1346815539393331215/1349393975324311592/ER-Diagram_OLA2.png?ex=67d2f092&is=67d19f12&hm=5293ffe5b3993209076bfd608abf38cfde6e13cb21cd01e79430e43a634206f3&
+
 ## Kommentar til ER-model
 
 Vi har designet databasen til at dække de centrale funktioner i et fitnesscenter. Vi har bygget modellen efter en fordeling som indeholder: medlemskab, træningshold, instruktører, booking, betaling og medlemsrabatter.
