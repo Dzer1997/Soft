@@ -1,4 +1,3 @@
--- Oprettelse af Medlemskab tabel
 CREATE TABLE Medlemskab (
     Medlemskab_id INT PRIMARY KEY AUTO_INCREMENT,
     Medlemskabstype ENUM('Basis', 'Premium', 'Elite') NOT NULL,
@@ -6,7 +5,6 @@ CREATE TABLE Medlemskab (
     Fordele VARCHAR(100)
 );
 
--- Oprettelse af Medlem tabel
 CREATE TABLE Medlem (
     Medlem_id INT PRIMARY KEY AUTO_INCREMENT,
     Navn VARCHAR(100) NOT NULL,
@@ -16,14 +14,12 @@ CREATE TABLE Medlem (
     FOREIGN KEY (Medlemskab_id) REFERENCES Medlemskab(Medlemskab_id)
 );
 
--- Oprettelse af Instruktør tabel
 CREATE TABLE Instruktør (
     Instruktør_id INT PRIMARY KEY AUTO_INCREMENT,
     Navn VARCHAR(100) NOT NULL,
     Specialitet VARCHAR(100)
 );
 
--- Oprettelse af Træningshold tabel
 CREATE TABLE Træningshold (
     Hold_id INT PRIMARY KEY AUTO_INCREMENT,
     Navn VARCHAR(100) NOT NULL,
@@ -34,7 +30,6 @@ CREATE TABLE Træningshold (
     FOREIGN KEY (Instruktør_id) REFERENCES Instruktør(Instruktør_id)
 );
 
--- Oprettelse af Booking tabel
 CREATE TABLE Booking (
     Booking_id INT PRIMARY KEY AUTO_INCREMENT,
     Medlem_id INT,
@@ -45,7 +40,6 @@ CREATE TABLE Booking (
     FOREIGN KEY (Hold_id) REFERENCES Træningshold(Hold_id)
 );
 
--- Oprettelse af Betaling tabel
 CREATE TABLE Betaling (
     Betalings_id INT PRIMARY KEY AUTO_INCREMENT,
     Medlem_id INT,
