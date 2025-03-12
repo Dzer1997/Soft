@@ -1,4 +1,4 @@
-https://cdn.discordapp.com/attachments/1346815539393331215/1349393975324311592/ER-Diagram_OLA2.png?ex=67d2f092&is=67d19f12&hm=5293ffe5b3993209076bfd608abf38cfde6e13cb21cd01e79430e43a634206f3&
+![ER-Diagram_OLA2](https://github.com/user-attachments/assets/78715a34-d7d2-4378-8d84-d3b7aae2461f)
 
 ## Kommentar til ER-model
 
