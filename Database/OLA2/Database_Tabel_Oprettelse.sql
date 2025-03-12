@@ -1,3 +1,9 @@
+-- Relationer mellem entiteter
+-- 1. Et medlem kan have ét medlemskab, men et medlemskab kan gælde for mange medlemmer (1:M).
+-- 2. Et medlem kan booke flere træningshold, og et træningshold kan have mange medlemmer tilmeldt (M:N via Booking-tabellen).
+-- 3. Et træningshold har en instruktør, men en instruktør kan være ansvarlig for flere hold (1:M).
+-- 4. Et medlem kan foretage flere betalinger, men en betaling hører til kub et medlem (1:M).
+
 CREATE TABLE Medlemskab (
     Medlemskab_id INT PRIMARY KEY AUTO_INCREMENT,
     Medlemskabstype ENUM('Basis', 'Premium', 'Elite') NOT NULL,
